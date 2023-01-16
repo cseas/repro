@@ -1,3 +1,3 @@
-# repro-tree-shake
+# repro
 
 Reproduction for react issues
