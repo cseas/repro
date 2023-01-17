@@ -1,3 +1,5 @@
+import { Button } from "@razorpay/blade/components";
+
 export function App() {
-  return <>hello</>;
+  return <Button>Pay Now</Button>;
 }
