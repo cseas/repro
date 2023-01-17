@@ -1,12 +1,16 @@
 # repro
 
-Repo for reproducing the issues in Blade.
+Repo for reproducing React issues.
 
-1. Tree shaking: https://github.com/razorpay/blade/issues/959
+1. VE: Webpack Plugin:
 
+2. Blade: Tree shaking: https://github.com/razorpay/blade/issues/959
+
+   - Switch branch: `git checkout repro-959`
    - See `main.bundle.js` in the [build](build) directory. You can find all Blade components in the final build even though `src/App.tsx` uses only a Button component.
+   - You can run `npm run build` for generating a new build.
 
-2. Wrong peerDependencies: https://github.com/razorpay/blade/issues/957
+3. Blade: Wrong peerDependencies: https://github.com/razorpay/blade/issues/957
 
    To reproduce:
 
