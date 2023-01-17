@@ -1,3 +1,5 @@
+import { container } from "./App.css.js";
+
 export function App() {
-  return <button>Hello</button>;
+  return <button className={container}>Hello</button>;
 }
