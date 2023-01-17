@@ -2,7 +2,7 @@
 
 Repo for reproducing React issues.
 
-1. Vanilla Extract: Webpack Plugin:
+1. Vanilla Extract: Webpack Plugin: https://github.com/vanilla-extract-css/vanilla-extract/issues/968
 
    - `npm run build` will reproduce the error.
 
