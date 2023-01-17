@@ -2,7 +2,9 @@
 
 Repo for reproducing React issues.
 
-1. VE: Webpack Plugin:
+1. Vanilla Extract: Webpack Plugin:
+
+   - `npm run build` will reproduce the error.
 
 2. Blade: Tree shaking: https://github.com/razorpay/blade/issues/959
 

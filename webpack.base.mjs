@@ -28,6 +28,12 @@ export const baseConfig = {
       },
 
       {
+        // this rule conflicts with the vanilla extract setup
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+
+      {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
