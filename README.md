@@ -2,22 +2,14 @@
 
 Repo for reproducing React issues.
 
-1. Vanilla Extract: Webpack Plugin: https://github.com/vanilla-extract-css/vanilla-extract/issues/968
-
-   - `npm run build` will reproduce the error.
-
-2. Blade: Tree shaking: https://github.com/razorpay/blade/issues/959
+1. Blade: Tree shaking: https://github.com/razorpay/blade/issues/959
 
    - Switch branch: `git checkout repro-959`
    - See `main.bundle.js` in the [build](build) directory. You can find all Blade components in the final build even though `src/App.tsx` uses only a Button component.
    - You can run `npm run build` for generating a new build.
 
-3. Blade: Wrong peerDependencies: https://github.com/razorpay/blade/issues/957
+2. Next.js: wildcard exports: https://github.com/vercel/next.js/issues/46267
 
-   To reproduce:
-
-   - Clone this repo
-   - Make sure your npm version is 7+
-   - Switch branch: `git checkout repro-957`
-   - Install project packages: `npm i`
-   - Install Blade: `npm i @razorpay/blade`
+   - Check `src/App.tsx`. It's using a deep import defined by the library using wildcard exports.
+   - Run `npm run build`. The project builds successfully with typescript checks.
+   - Next.js throws an error on build with similar config.
