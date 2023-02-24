@@ -1,3 +1,5 @@
+import { Typography } from "hazel-ui/Typography";
+
 export function App() {
-  return <p>Hello</p>;
+  return <Typography>Hello</Typography>;
 }
