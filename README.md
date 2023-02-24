@@ -10,6 +10,7 @@ Repo for reproducing React issues.
 
 2. Next.js: wildcard exports: https://github.com/vercel/next.js/issues/46267
 
+   - Switch branch: `git checkout repro-46267`
    - Check `src/App.tsx`. It's using a deep import defined by the library using wildcard exports.
    - Run `npm run build`. The project builds successfully with typescript checks.
    - Next.js throws an error on build with similar config.
